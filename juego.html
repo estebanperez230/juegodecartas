@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Juguemos al Apuntado</title>
+    <link rel="stylesheet" href="ESTILOS/estilos.css" type="text/css">
+
+</head>
+
+<div class="encabezado">
+    <h1>Juego de Cartas</h1>
+</div>
+<div class="botones">
+    <button class="boton" onclick="repartir()">
+        <img src="imagenes/iconos/repartir.png" alt="repatir las cartas">
+    </button>
+    <button class="boton">
+        <img src="imagenes/iconos/check (2).png" alt="hallar grupos de cartas ">
+    </button>
+
+</div>
+<div id="tablero">
+
+</div>
+
+<script>
+    function repartir() {
+        let tablero = document.getElementById("tablero");
+        let carta = document.createElement("img");
+        let indice = Math.floor(Math.random() * 52) + 1;
+        carta.src = "imagenes/cartas/carta" + indice + ".jpg";
+        tablero.appendChild(carta);
+
+    }
+</script>
+
+</body>
+
+</html>

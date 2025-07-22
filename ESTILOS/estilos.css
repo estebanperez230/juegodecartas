@@ -1,0 +1,40 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #a50044, #004d98);
+    min-height: 100vh;
+}
+
+h1 {
+    color: #eab300;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.encabezado {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    /*transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;*/
+}
+
+.boton:hover {
+    background-color: #197602;
+    transform: translatav(-5px);
+
+
+}
