@@ -3,7 +3,7 @@
 <head>
     <title>Juguemos al Apuntado hoy</title>
     <link rel="stylesheet" href="ESTILOS/estilos.css" type="text/css">
-
+    <script src="CODIGO/app.js"></script>
 </head>
 
 <div class="encabezado">
@@ -13,25 +13,16 @@
     <button class="boton" onclick="repartir()">
         <img src="imagenes/iconos/repartir.png" alt="repatir las cartas">
     </button>
-    <button class="boton">
+    <button class="boton" onclick="verificar()">
         <img src="imagenes/iconos/check (2).png" alt="hallar grupos de cartas ">
     </button>
 
 </div>
-<div id="tablero">
+<div id="tablero" class="tablero">
+
 
 </div>
 
-<script>
-    function repartir() {
-        let tablero = document.getElementById("tablero");
-        let carta = document.createElement("img");
-        let indice = Math.floor(Math.random() * 52) + 1;
-        carta.src = "imagenes/cartas/carta" + indice + ".jpg";
-        tablero.appendChild(carta);
-
-    }
-</script>
 
 </body>
 

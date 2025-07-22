@@ -5,36 +5,76 @@ body {
 }
 
 h1 {
-    color: #eab300;
+    color: #25050f;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgb(254, 254, 254);
+    
+    
+
 }
 
 .encabezado {
+    
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 50%;
+    background-color: rgba(216, 4, 53);
+    height: 50px;
+    margin: auto; 
+    border: 5px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .botones {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin: 20px;
+    
 }
 
 .boton {
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #2f50c600;
+    box-shadow: 0 4px 15px rgb(241, 235, 243);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
+    border-radius: 100px;
+    border: 5px solid #000000f3;
     /*transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;*/
 }
 
 .boton:hover {
-    background-color: #197602;
-    transform: translatav(-5px);
-
-
+    background-color: #e3153e;
+    transform: translateY(-5px);
 }
+
+.tablero {
+    position: relative; /* Es importante que sea relative para que las cartas absolutas se posicionen dentro de ella */
+    min-height: 200px; /* Altura mínima para que sea visible antes de repartir */
+    width: 90%; /* Ancho de la mesa */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    background-color: rgb(216, 4, 53); /* Verde oscuro semitransparente para la mesa */
+    border: 10px solid #000000f3; /* Borde marrón para la mesa */
+    border-radius: 60px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 10px 20px rgb(255, 255, 255);
+    margin-top: 20px;
+    display: flex; /* Añadir flexbox para organizar las cartas como alternativa */
+    justify-content: center; /* Centrar las cartas en la mesa */
+    align-items: center; /* Alinear cartas al inicio verticalmente */
+    flex-wrap: wrap; /* Permitir que las cartas pasen a la siguiente línea */
+    gap: 10px; /* Espacio entre las cartas cuando no están superpuestas */
+    padding: 20px; /* Espacio interno de la mesa */
+    min-height: 200px; /* Asegura que la mesa tenga altura visible */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
